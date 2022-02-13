@@ -1,5 +1,6 @@
 import { Peticiones } from "./03-examples/Peticiones";
 import { FormUseRef } from "./04-useRef/FormUseRef";
+import { RealRef } from "./04-useRef/RealRef";
 import { useCounter } from "./hooks/useCounter";
 
 function App() {
@@ -8,12 +9,16 @@ function App() {
 
   return (
     <div className="App">
+      {/*
       <h1>Contando: {pepe}</h1>
       <button onClick={() => increment(1)}>Increment</button>
       <button onClick={() => decrement(1)}>Decrement</button>
       <button onClick={reset}>Reset</button>
       <Peticiones />
       <FormUseRef />
+      <hr />
+       */}
+      <RealRef />
     </div>
   );
 }

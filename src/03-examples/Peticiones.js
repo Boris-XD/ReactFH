@@ -14,7 +14,10 @@ export const Peticiones = () => {
     <div className="box">
       <h2>Peticiones Custom Hooks</h2>
       {loading ? (
-        <span>Cargando</span>
+        <>
+          <span>Cargando</span>
+          <br />
+        </>
       ) : (
         <blockquote>
           <p>{quote}</p>
