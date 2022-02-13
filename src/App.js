@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { Peticiones } from "./03-examples/Peticiones";
+import { useCounter } from "./hooks/useCounter";
 
 function App() {
+  const initialValue = 1;
+  const { state: pepe, increment, decrement, reset } = useCounter(initialValue);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Contando: {pepe}</h1>
+      <button onClick={() => increment(1)}>Increment</button>
+      <button onClick={() => decrement(1)}>Decrement</button>
+      <button onClick={reset}>Reset</button>
+      <Peticiones />
     </div>
   );
 }
