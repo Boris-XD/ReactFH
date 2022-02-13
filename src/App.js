@@ -1,4 +1,5 @@
 import { Peticiones } from "./03-examples/Peticiones";
+import { FormUseRef } from "./04-useRef/FormUseRef";
 import { useCounter } from "./hooks/useCounter";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <button onClick={() => decrement(1)}>Decrement</button>
       <button onClick={reset}>Reset</button>
       <Peticiones />
+      <FormUseRef />
     </div>
   );
 }
