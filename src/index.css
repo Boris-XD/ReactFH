@@ -20,3 +20,14 @@ code {
   margin: 2rem;
   border-radius: 5px;
 }
+
+button{
+  font-size: large;
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
+  background-color: rgb(34, 34, 34);
+  border-radius: 10px;
+  border-style: solid;
+
+}

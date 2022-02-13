@@ -1,6 +1,7 @@
 import { Peticiones } from "./03-examples/Peticiones";
 import { FormUseRef } from "./04-useRef/FormUseRef";
 import { RealRef } from "./04-useRef/RealRef";
+import { Memo } from "./06-Memo/Memo";
 import { useCounter } from "./hooks/useCounter";
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
       <Peticiones />
       <FormUseRef />
       <hr />
-       */}
       <RealRef />
+    */}
+      <Memo />
     </div>
   );
 }
